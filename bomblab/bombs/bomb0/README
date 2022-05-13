@@ -108,7 +108,7 @@ Phase 7
             }
         }
     since res = 4 (cmp eax, 0x4), it needs two (res << 1) operations, and because the height is 3, thus the last operation must put 
-    res to 0, given this , the steps would be: root->left => root->left => root->right. Therefore, 6 < k < 8, which can only be 7
+    res to 0, given this, the steps would be: root->left => root->left => root->right. Therefore, 6 < k < 8, which can only be 7
 
     
 
