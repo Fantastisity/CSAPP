@@ -70,7 +70,9 @@ Phase 6:
             0x000003e1	0x00000006  0x00000000	0x00000000
     cmp DWORD PTR [rbx], eax // sort values in decreasing order, while the corresponding indexes are 6 5 3 4 1 2
     
-Phase 7
+Secret Phase
+to get to this phase, first 'disass phase_defused', then notice there is a string comparison step at 0x1e30, and 
+x /s 0x3382 brings us the required string to append after Phase 4 solution, which happens to be "DrEvil"
     balanced BST with root at 0x5120
     x /56wx 0x5120
     0x5120 <n1>:	    0x00000024	0x00000000	0x00005140	0x00000000 // (1, 1) -- root
